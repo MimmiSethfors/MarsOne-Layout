@@ -1,0 +1,141 @@
+.information {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	justify-items: center;
+	@media (min-width: 800px) {
+		grid-template-rows: 0.6fr auto auto;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"heading heading"
+			"why-mars sustainable-sun"
+			"move-in sustainable-sun";
+		padding-bottom: 5%;
+	}
+
+	&__title {
+		color: $blue2;
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 5% 5% 5%;
+		transition: all ease-in 500ms;
+		@media (min-width: 800px) {
+			font-size: 36px;
+			font-weight: 800;
+			grid-area: heading;
+			margin: 5% 8% 8% 8%;
+		}
+		@media (min-width: 900px) {
+			margin: 8%;
+		}
+	}
+}
+
+.information-article {
+	background: $white2;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	justify-items: center;
+	margin: 0 5% 5% 5%;
+	padding: 5%;
+	text-align: center;
+	box-shadow: $shadow;
+	@media (min-width: 600px) {
+		display: flex;
+		text-align: left;
+	}
+
+	&__image {
+		object-fit: cover;
+	}
+
+	&__text {
+		color: $black1;
+		@media (min-width: 600px) {
+			text-align: left;
+			padding: 0 10% 0 10%;
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+
+	&__button {
+		color: $blue2;
+		border-radius: 10px;
+		border: $blue-border-solid;
+		background: $white2;
+		font-size: 14px;
+		font-weight: 500;
+		height: 24px;
+		margin: 3% 0 4% 0;
+		@media (min-width: 600px) {
+			margin: 3% 0 0 10%;
+		}
+	}
+
+	&__title {
+		color: $red1;
+		margin-bottom: 0;
+		font-size: 24px;
+		font-weight: 500;
+		@media (min-width: 600px) {
+			margin: 0 0 0 10%;
+		}
+	}
+	&.move-in {
+		@media (min-width: 600px) {
+			padding: 0%;
+
+			.article-wrapper {
+				padding-left: 5%;
+				padding-top: 10%;
+			}
+		}
+	}
+}
+
+.information-article {
+	@media (min-width: 800px) {
+		&.why-mars {
+			grid-template-rows: 1fr;
+			grid-template-columns: auto auto;
+			grid-area: why-mars;
+			margin: 0 2% 5% 5%;
+			text-align: left;
+		}
+		.article-wrapper {
+			padding-left: 5%;
+		}
+
+		&.move-in {
+			grid-template-rows: 1fr;
+			grid-template-columns: auto auto;
+			grid-area: move-in;
+			margin: 0 2% 5% 5%;
+			padding: 0;
+
+			.article-wrapper {
+				padding-top: 4%;
+			}
+
+			.information-article__title {
+				margin: 10% 0 0 10%;
+			}
+		}
+		&.sustainable-sun {
+			grid-area: sustainable-sun;
+			flex-direction: column;
+			margin: 0 12% 10% 5%;
+			img {
+				padding-top: 15%;
+			}
+			.article-wrapper {
+				padding-left: 5%;
+			}
+
+			.information-article__title {
+				margin: 10% 0 0 10%;
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>FAQ</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="img-wrapper">
+				<img class="header__logo" src="./images/logo.png" alt="Logo Mars One" />
+			</div>
+			<nav class="header__nav">
+				<ul>
+					<li>
+						<a class="header__nav__link" href="./index.html"
+							>Mars One
+							<hr class="header__nav__link__underline"
+						/></a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="./faq.html"
+							>FAQ
+							<hr class="header__nav__link__underline"
+						/></a>
+					</li>
+					<li>
+						<a class="header__nav__link" href="./join-the-crew.html"
+							>Join the Crew
+							<hr class="header__nav__link__underline active"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="hero-image hero-image-3">
+			<div class="hero-image__text-wrapper  join-journey">
+				<h1 class="hero-image__title">
+					Be brave, join<br />
+					the journey!
+				</h1>
+				<hr class="hero-image__line" />
+				<p class="hero-image__text">
+					Be one of the next <br />
+					heroes in space
+				</p>
+			</div>
+		</section>
+
+		<main>
+			<section class="join">
+				<article class="join__info">
+					<h2 class="join__info__title">Join us in the mission</h2>
+					<p class="join__info__text">
+						Be part of the mission. Send us your motivation of why just you
+						should be the next space traveler
+					</p>
+				</article>
+
+				<form
+					class="join-form"
+					action="https://formspree.io/mgevqdzp"
+					method="POST"
+				>
+					<label for="first-name"
+						>First name <br />
+						<input
+							class="join-form__input first-name"
+							type="text"
+							name="first-name"
+							id="first-name"
+							required
+						/>
+					</label>
+
+					<label for="last-name"
+						>Last name <br />
+						<input
+							class="join-form__input last-name"
+							type="text"
+							name="last-name"
+							id="last-name"
+							required
+						/>
+					</label>
+
+					<label for="date-of-birth"
+						>Date of Birth <br />
+						<input
+							class="join-form__input birth"
+							type="text"
+							name="date-of-birth"
+							id="date-of-birth"
+							required
+						/>
+					</label>
+
+					<label class="proffession" for="proffesion"
+						>Proffesion <br />
+						<input
+							class="join-form__input proffession"
+							type="text"
+							name="proffesion"
+							id="proffesion"
+							required
+						/>
+					</label>
+
+					<label class="skill" for="prime-skill"
+						>Prime skill <br />
+						<input
+							class="join-form__input skill"
+							type="text"
+							name="prime-skill"
+							id="prime-skill"
+							required
+						/>
+					</label>
+
+					<label class="motivation" for="motivation"
+						>Motivation <br />
+						<textarea
+							class="join-form__input  motivation"
+							name="motivation"
+							id="motivation"
+							minlength="1000"
+							required
+						></textarea>
+					</label>
+
+					<button class="join-form__submit" type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__text-wrapper">
+				<p class="footer__title">Mars One</p>
+				<p class="footer__text">
+					This site is made for educational purpose and is based on the real
+					<span class="footer__text__highlighted">Mars One</span> project.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

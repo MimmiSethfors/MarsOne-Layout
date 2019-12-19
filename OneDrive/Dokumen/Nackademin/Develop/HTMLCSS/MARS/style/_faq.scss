@@ -1,0 +1,237 @@
+.faq {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	align-items: center;
+	transition: all ease-in 500ms;
+	@media (min-width: 500px) {
+		grid-gap: 3%;
+		padding-bottom: 53%;
+	}
+	@media (min-width: 600px) {
+		padding-bottom: 37%;
+	}
+	@media (min-width: 700px) {
+		padding-bottom: 31%;
+	}
+
+	@media (min-width: 800px) {
+		padding-bottom: 16%;
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: auto auto auto 1fr;
+		grid-template-areas:
+			"heading heading"
+			"why-move risk"
+			"why-move todo"
+			"how-long how-long";
+	}
+	@media (min-width: 900px) {
+		padding-bottom: 8%;
+	}
+
+	&__article {
+		background: $white2;
+		margin: 5% 0 10% 0;
+		padding: 6%;
+		box-shadow: $shadow;
+		@media (min-width: 500px) {
+			margin: 0;
+			padding: 0;
+		}
+		@media (min-width: 800px) {
+			height: 100%;
+			box-sizing: border-box;
+			display: grid;
+		}
+
+		&__title {
+			color: $red1;
+			margin: 3% 0 4% 5%;
+			font-size: 24px;
+			font-weight: 500;
+			@media (min-width: 500px) {
+				font-size: 24px;
+			}
+			@media (min-width: 800px) {
+				margin: 0 0 4% 5%;
+			}
+		}
+		&__text {
+			margin: 0 5% 3% 5%;
+			@media (min-width: 500px) {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+		&__listed-reasons {
+			font-weight: 500;
+			list-style-type: none;
+			@media (min-width: 500px) {
+				font-weight: 700;
+			}
+		}
+	}
+	li:before {
+		content: "•";
+		padding-right: 3%;
+		color: $red1;
+	}
+
+	&__head-title {
+		color: $blue2;
+		text-align: center;
+		margin-bottom: 5%;
+		font-size: 30px;
+		font-weight: 700;
+		@media (min-width: 500px) {
+			margin: 5% 0 0 0;
+		}
+		transition: all ease-in 500ms;
+		@media (min-width: 800px) {
+			grid-area: heading;
+			margin: 5% 0 0 0;
+			font-size: 36px;
+			font-weight: 800;
+		}
+	}
+}
+
+h3.under-img {
+	margin-top: 5%;
+	@media (min-width: 800px) {
+		margin-top: 0;
+	}
+}
+
+.faq__article.why {
+	@media (min-width: 800px) {
+		grid-area: why-move;
+	}
+}
+.faq__article.how-long {
+	box-shadow: none;
+	@media (min-width: 800px) {
+		grid-area: how-long;
+		flex-direction: row;
+	}
+}
+
+.faq__article.todo,
+.how-long {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+
+	.img-wrapper.todo {
+		@media (min-width: 650px) {
+			order: 1;
+			padding: 0;
+		}
+	}
+}
+
+@media (min-width: 650px) {
+	.how-long {
+		flex-direction: row;
+	}
+}
+@media (min-width: 650px) {
+	.how-long {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+@media (min-width: 1000px) {
+	.faq__article.todo {
+		flex-direction: row;
+	}
+}
+
+.article-wrapper {
+	padding: 5%;
+	@media (min-width: 650px) {
+		align-self: center;
+		padding: 7%;
+	}
+}
+
+.todo__img {
+	height: 200px;
+	width: 220px;
+	object-fit: cover;
+
+	@media (min-width: 350px) {
+		height: 320px;
+		width: 320px;
+	}
+	@media (min-width: 900px) {
+		height: 380px;
+		width: 380px;
+	}
+	transition: all ease-in 500ms;
+	@media (min-width: 1200px) {
+		height: 462px;
+		width: 462px;
+	}
+}
+
+.how-long {
+	.img-wrapper {
+		height: 200px;
+		width: 200px;
+		background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr 2fr;
+		justify-items: center;
+		transition: all ease-in 500ms;
+		@media (min-width: 350px) {
+			height: 300px;
+			width: 300px;
+		}
+		@media (min-width: 700px) {
+			height: 350px;
+			width: 350px;
+		}
+		@media (min-width: 900px) {
+			height: 400px;
+			width: 400px;
+		}
+		@media (min-width: 1000px) {
+			height: 462px;
+			width: 462px;
+		}
+	}
+
+	.mars {
+		height: 20px;
+		align-self: flex-end;
+		@media (min-width: 900px) {
+			height: 30px;
+		}
+	}
+	.sun {
+		height: 38px;
+		align-self: flex-end;
+		@media (min-width: 350px) {
+			align-self: center;
+			margin-top: 9%;
+		}
+		@media (min-width: 900px) {
+			height: 48px;
+		}
+	}
+	.earth {
+		height: 20px;
+		align-self: center;
+		@media (min-width: 350px) {
+			align-self: flex-start;
+			margin-top: 5%;
+		}
+		@media (min-width: 900px) {
+			height: 30px;
+		}
+	}
+}

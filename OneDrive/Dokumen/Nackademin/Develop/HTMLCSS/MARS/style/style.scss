@@ -1,0 +1,30 @@
+@import "./variabels/variabels";
+@import "./header";
+@import "./hero";
+@import "./introduction";
+@import "./information";
+@import "./footer";
+@import "./faq";
+@import "./join";
+
+@import "./information-img";
+@import "./hero-ellipse";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap");
+body {
+	margin: 0;
+	width: 100%;
+	background: $white1;
+	font-family: "Montserrat", sans-serif;
+	color: $black1;
+}
+article {
+	font-size: 16px;
+}
+
+button:hover {
+	background: $blue2;
+	color: $white1;
+}
+img {
+	display: block;
+}

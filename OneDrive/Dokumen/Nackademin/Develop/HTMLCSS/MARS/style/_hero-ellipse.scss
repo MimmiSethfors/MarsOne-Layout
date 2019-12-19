@@ -1,0 +1,117 @@
+.hero-image-1::after,
+.hero-image-1::before,
+.hero-image-2::after,
+.hero-image-2::before,
+.hero-image-3::after,
+.hero-image-3::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.hero-image-1,
+.hero-image-2 {
+	&::after {
+		background: linear-gradient(183deg, #00132c, rgba(21, 52, 98, 0.9) 60%) -20%;
+
+		clip-path: ellipse(65% 40.62% at 60% 12%);
+		@media (min-width: 300px) {
+			clip-path: ellipse(65% 46.76% at 54.88% 22.47%);
+		}
+		@media (min-width: 400px) {
+			clip-path: ellipse(65% 49.01% at 59.26% 14.63%);
+		}
+		@media (min-width: 500px) {
+			clip-path: ellipse(65% 41.65% at 60% 12%);
+		}
+		@media (min-width: 550px) {
+			clip-path: ellipse(65% 44.04% at 60% 12%);
+		}
+		@media (min-width: 700px) {
+			clip-path: ellipse(65% 42.71% at 60% 12%);
+		}
+		@media (min-width: 900px) {
+			clip-path: ellipse(65% 54.01% at 60.79% 9.91%);
+		}
+	}
+	&::before {
+		background: linear-gradient(200deg, #5e97e2a1, rgba(21, 52, 98, 0.9));
+
+		clip-path: ellipse(65% 38.32% at 59.92% 17.31%);
+		@media (min-width: 300px) {
+			clip-path: ellipse(65% 48.15% at 53.85% 24.68%);
+		}
+		@media (min-width: 400px) {
+			clip-path: ellipse(65% 48.93% at 59.26% 17.98%);
+		}
+		@media (min-width: 500px) {
+			clip-path: ellipse(65% 41.45% at 59.46% 15.01%);
+		}
+
+		@media (min-width: 550px) {
+			clip-path: ellipse(65% 45.01% at 58.62% 14.33%);
+		}
+
+		@media (min-width: 700px) {
+			clip-path: ellipse(65% 43.09% at 59.31% 13.63%);
+		}
+
+		@media (min-width: 900px) {
+			clip-path: ellipse(65% 55.01% at 60% 11%);
+		}
+	}
+}
+
+.hero-image-3::after {
+	background: linear-gradient(183deg, rgba(21, 52, 98, 0.9) 30%, #00132c) -11%;
+	top: 0px;
+
+	clip-path: ellipse(65% 40% at 44.11% 90.49%);
+
+	@media (min-width: 400px) {
+		clip-path: ellipse(65% 57.09% at 37.67% 102.96%);
+	}
+
+	@media (min-width: 500px) {
+		clip-path: ellipse(72.34% 46.77% at 32.04% 103.93%);
+	}
+	@media (min-width: 550px) {
+		clip-path: ellipse(72.34% 54.12% at 39.86% 102.08%);
+	}
+	@media (min-width: 700px) {
+		clip-path: ellipse(72.34% 45.51% at 39.05% 100.93%);
+	}
+	@media (min-width: 900px) {
+		clip-path: ellipse(72.34% 71.02% at 31.9% 119.44%);
+	}
+	@media (min-width: 1000px) {
+	}
+}
+
+.hero-image-3::before {
+	background: linear-gradient(200deg, #5e97e2a1, rgba(21, 52, 98, 0.9));
+
+	clip-path: ellipse(65% 40.48% at 44.73% 87.51%);
+
+	@media (min-width: 400px) {
+		clip-path: ellipse(65% 56.43% at 37.71% 98.62%);
+	}
+	@media (min-width: 500px) {
+		clip-path: ellipse(72.34% 46.77% at 32.97% 101.12%);
+	}
+	@media (min-width: 550px) {
+		clip-path: ellipse(72.34% 48.13% at 39.19% 92.58%);
+	}
+	@media (min-width: 700px) {
+		clip-path: ellipse(72.34% 44.55% at 39.05% 97.29%);
+	}
+	@media (min-width: 900px) {
+		clip-path: ellipse(72.34% 66.27% at 30.75% 111.66%);
+	}
+	@media (min-width: 1000px) {
+	}
+}
